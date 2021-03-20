@@ -1,0 +1,18 @@
+.graph_container{
+	margin: 1em 0.4em;
+}
+
+.graph_container div{
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.graph_container div h2{
+	color: whitesmoke;
+}
+.graph_container p{
+	color: var(--vibe_pink);
+	font-size: 22px;
+}

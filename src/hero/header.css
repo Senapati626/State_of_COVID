@@ -1,0 +1,84 @@
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.container{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(125px, 1fr));
+  --stagger-delay: 100ms;
+  font-family: "IBM Plex Mono", sans-serif;
+  color: whitesmoke;
+}
+.items{ 
+  border: 0.5px solid whitesmoke;
+  display: grid;
+  place-items: center;
+  font-size: 45px;
+  color: #e0e4e4;
+  animation: itementrance 700ms ease;
+  animation-fill-mode: backwards;
+}
+.st{
+  grid-column-start: 2;
+  display: grid;
+  place-items: center;
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+.at{
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+.e{
+  grid-row-start: 2;
+  grid-column-start: 4;
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+.of{
+  grid-row-start: 2;
+  color: #41c7c7;
+  animation-delay: calc(4 * var(--stagger-delay));
+}
+.twenty{
+  grid-row-start: 3;
+  grid-column-start: 4;
+  color: #fe6a6a;
+  animation-delay: calc(6 * var(--stagger-delay));
+}
+.twenone{
+  grid-row-start: 4;
+  grid-column-start: 3;
+  color: #fe6a6a;
+  animation-delay: calc(7 * var(--stagger-delay));
+}
+.covid{
+  color: wheat;
+  border: 0.5px solid whitesmoke;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column: span 2;
+  grid-row: span 2;
+  display: grid;
+  place-items: end;
+  padding: 0 5px;
+  font-size: 70px;
+  animation: itementrance 700ms ease;
+  animation-delay: calc(5 * var(--stagger-delay));
+  animation-fill-mode: backwards;
+}
+.covid p{ 
+  max-width: 3ch;
+}
+@keyframes itementrance{
+  from{
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,22 @@
+.leader_container{
+	display: grid;
+	place-items: center;
+	gap: 2em;
+	animation: leader 1.5s ease-in;
+}
+
+.graph_wrapper{
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	border-bottom: 2px solid pink;
+}
+
+@keyframes leader{
+	from{
+		clip-path: circle(10%);
+	}
+	to{
+		clip-path: circle(100%);
+	}
+}

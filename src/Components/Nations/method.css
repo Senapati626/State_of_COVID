@@ -1,0 +1,128 @@
+*{
+	--positive_green: #55e383;
+	--base_green: #41c7c7;
+	--vibe_pink: #FF8B94;
+	--alert_red: #FF3939;
+	--base_red: #fe6a6a; 
+}
+
+.nation_data_wrapper{
+	display: grid;
+	grid-template-rows: 2fr;
+	width: 100% !important;
+	font-size: 12px;
+	margin: 2em 0;	
+	transform-origin: top;
+
+}
+
+.dataA{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.dataA div{
+
+	
+}
+.data_test div{
+	font-size: 2em;
+	display: grid;
+	place-items: center;
+	text-align: center;
+		width: 50%;
+	border: 0.8px dashed wheat;
+}
+.data_recovered div{
+	width: 50%;
+	border: 0.8px dashed wheat;
+	font-size: 1.6em;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+.data_head div{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.data_cases div, .data_death div{
+	width: 33.33%;
+	font-weight: bold;
+	border: 1px dashed cyan;
+	font-size: 2em;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.country{
+	padding: 0 1.5em;
+}
+.country p:nth-child(1){
+	color: whitesmoke;
+	font-size: 50px;
+	align-self: flex-end;
+}
+.country p:nth-child(2){
+	color: whitesmoke;
+	font-size: 20px;
+	align-self: flex-end;
+}
+.data_cases div:nth-child(1) p:nth-child(1){
+	color: var(--base_green);
+}
+.data_cases div:nth-child(2) p:nth-child(1){
+	color: var(--base_red);
+}
+.data_cases div:nth-child(3) p:nth-child(1){
+	color: var(--positive_green);
+}
+.data_death div:nth-child(1) p:nth-child(1){
+	color: var(--alert_red);
+}
+.data_death div:nth-child(2) p:nth-child(1){
+	color: var(--base_green);
+}
+.data_death div:nth-child(3) p:nth-child(1){
+	color: var(--alert_red);
+}
+.data_recovered div:nth-child(1) p:nth-child(1){
+	color: var(--vibe_pink);
+}
+.data_recovered div:nth-child(2) p:nth-child(1){
+	color: var(--positive_green);
+}
+.data_test div:nth-child(1) p:nth-child(1){
+	color: var(--base_green);
+}
+.data_test div:nth-child(2) p:nth-child(1){
+	color: var(--vibe_pink);
+}
+
+
+.data_recovered div p:nth-child(2),.data_cases div p:nth-child(2), .data_death div p:nth-child(2),.data_test div p:nth-child(2){
+	color: whitesmoke;
+}
+
+@keyframes datawrap{
+	0%{
+		transform: scaleY(0);
+	}
+	50%{
+		transform: scaleY(0.7);
+	}
+	100%{
+		transform: scaleY(1);
+	}
+}
+@media screen and (max-width: 600px){
+	.data_head div{
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.nation_data_wrapper{
+		font-size: 8px;
+	}
+}
