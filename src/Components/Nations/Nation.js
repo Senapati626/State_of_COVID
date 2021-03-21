@@ -63,7 +63,7 @@ class Nation extends React.Component {
 							<div className="form_text_input">
 							<input type="text" 
 							name="country"
-							placeholder="enter country name"
+							placeholder="Enter country name"
 							onChange={this.onChange}
 							/>
 							</div>

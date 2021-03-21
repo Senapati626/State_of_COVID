@@ -25,8 +25,8 @@ const Data = [
 		cNameActive: "nav-items-active"
 	},
 			{
-		title: "Dissapointers",
-		path: "/dissapointer",
+		title: "Disappointers",
+		path: "/disappointer",
 		cName: "nav-items",
 		cNameActive: "nav-items-active"
 	},

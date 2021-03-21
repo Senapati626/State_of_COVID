@@ -1,6 +1,5 @@
 import React from "react";
 import Testsgraph from "./Tests";
-import Genius from "./Genius";
 import "./style.css";
 
 

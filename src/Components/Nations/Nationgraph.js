@@ -192,6 +192,14 @@ export default function Nationgraph({data}) {
         activeDot={{stroke: "#fe6a6a", strokeWidth: 2, r: 8 }}
       />
     </LineChart></ResponsiveContainer></div>
+     <div>
+        <p style={{color: "var(--base_white)",
+                   fontSize: "14px",
+                  textAlign: "center",
+                  maxWidth: "80ch",
+                  marginTop: "2em"}}>
+          {"P.S - Use '-' in place of spaces while inputting name of countries. ( i.e - Type Sri-Lanka instead of Sri Lanka )  Please reload the page for inputting a new Nation. Work is in progress to fix this issue."}</p>
+    </div>
     </div>
 
   );

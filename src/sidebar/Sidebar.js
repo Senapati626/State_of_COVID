@@ -76,8 +76,13 @@ return(
               </li>
             );
           })}
-           <li><p>{"Designed & Developed by Neellohit S."}</p></li>
         </ul>
+        <IconContext.Provider value={{color: '#fe6a6a', fontSize: "4px"}}>
+        <p className="footy">
+        Designed and Developed with <FaIcons.FaHeart/><br/>
+        {"By Neellohit S."}
+        </p>
+        </IconContext.Provider>
       </nav>
     </>
   );

@@ -140,7 +140,11 @@
 .nav-items-inactive:hover p{
   text-shadow: rgb(65 199 199 / 90%) 0px 2px 10px;
 }
-
+.footy{
+  text-align: center;
+  color: wheat;
+  font-size: 0.8em;
+}
 @media only screen and (max-width: 720px){
   .navbar{
     width: min-content;
