@@ -74,8 +74,6 @@ export default function Nationgraph({data}) {
   const data5 = testAdd(labelArray,casesData);
 
   const data6 = rrAdd(labelArray,casesData);
-
-   console.log(data);
   return (
     <div className="graph_container">
     <p>Each unit in the X-axis represents two weeks between {labelArray[labelArray.length-1]} and {labelArray[0]}</p>
@@ -194,7 +192,7 @@ export default function Nationgraph({data}) {
     </LineChart></ResponsiveContainer></div>
      <div>
         <p style={{color: "var(--base_white)",
-                   fontSize: "14px",
+                   fontSize: "10px",
                   textAlign: "center",
                   maxWidth: "80ch",
                   marginTop: "2em"}}>

@@ -1,7 +1,6 @@
 import React from "react";
 import Method from "./Nationmethods";
 import Methodgraph from "./Methodgraph";
-import axios from "axios";
 import "./nations.css"
 
 class Nation extends React.Component {
@@ -19,7 +18,7 @@ class Nation extends React.Component {
     fetch("https://covid-193.p.rapidapi.com/statistics", {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "ca3d776725msh24046ff071ebdb9p1ea1aejsnfbea281c6555",
+        "x-rapidapi-key": "ca3d776725msh24046ff071ebdb9p1ea1aejsnfbea281c6555", //YOUR API KEY
         "x-rapidapi-host": "covid-193.p.rapidapi.com"
       }
     })
@@ -59,7 +58,7 @@ class Nation extends React.Component {
 				</header>
 				<div className="nation_input">
 					<div className="nation_form">
-						<form action="POST">
+						<form action="POST" autoComplete="off">
 							<div className="form_text_input">
 							<input type="text" 
 							name="country"

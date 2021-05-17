@@ -9,4 +9,15 @@ body{
   width: 100%; 
   min-height: 100vh;
   font-family: "IBM Plex Mono", sans-serif;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+*{
+	--positive_green: #55e383;
+	--base_green: #41c7c7;
+	--vibe_pink: #FF8B94;
+	--alert_red: #FF3939;
+	--base_red: #fe6a6a; 
+	--base_white: #e0e4e4;
 }

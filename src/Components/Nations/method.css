@@ -1,11 +1,4 @@
-*{
-	--positive_green: #55e383;
-	--base_green: #41c7c7;
-	--vibe_pink: #FF8B94;
-	--alert_red: #FF3939;
-	--base_red: #fe6a6a; 
-	--base_white: #e0e4e4;
-}
+
 
 .nation_data_wrapper{
 	display: grid;

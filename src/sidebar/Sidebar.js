@@ -18,7 +18,7 @@ class Sidebar extends React.Component{
 fetch("https://covid-19-data.p.rapidapi.com/totals", {
   "method": "GET",
   "headers": {
-    "x-rapidapi-key": "ca3d776725msh24046ff071ebdb9p1ea1aejsnfbea281c6555",
+    "x-rapidapi-key": "ca3d776725msh24046ff071ebdb9p1ea1aejsnfbea281c6555", //YOUR API KEY
     "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
   }
 })
@@ -36,19 +36,19 @@ const {dataset} = this.state;
 return(
     <>
       <div className="navbar">
-      <div className="bars">
-      <IconContext.Provider value={{color: '#fe6a6a'}}>
-        <Link to="#" className="menu-bars">
-          <FaIcons.FaBars onClick={this.showSidebar} />
-        </Link>
-      </IconContext.Provider>
-      </div>
-      {dataset.length === 0 ? <div style={{textAlign: "center"}}><p style={{color:"pink"}}>...</p></div> :
-      <div className="live">
-        <div className="datas"><p>Confirmed Cases:</p><p>{dataset.confirmed}</p></div>
-        <div className="datas"><p>Death Count:</p><p>{dataset.deaths}</p></div>
-        <div className="datas"><p>Total Recoveries:</p><p>{dataset.recovered}</p></div>
-      </div>}
+        <div className="bars">
+        <IconContext.Provider value={{color: '#fe6a6a'}}>
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={this.showSidebar} />
+          </Link>
+        </IconContext.Provider>
+        </div>
+        {dataset.length === 0 ? <div style={{textAlign: "center"}}><p style={{color:"pink"}}>...</p></div> :
+        <div className="live">
+          <div className="datas"><p>Cases:</p><p>{dataset.confirmed}</p></div>
+          <div className="datas"><p>Deaths:</p><p>{dataset.deaths}</p></div>
+          <div className="datas"><p>Recoveries:</p><p>{dataset.recovered}</p></div>
+        </div>}
       </div>
 
       <nav className={this.state.sidebar ? "nav-menu active" : "nav-menu"}>

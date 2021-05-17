@@ -1,7 +1,8 @@
 .nation_container{
 	display: grid;
-	place-items: center;
+	justify-items: center;
 	padding: 2em 2em;
+	overflow: hidden;
 }
 .nation_header{
 	display: flex;
@@ -10,11 +11,11 @@
 	align-items: center;
 }
 .nation_header span:nth-child(1){
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: whitesmoke;
 }
 .nation_header span:nth-child(2){
-	font-size: 4em;
+	font-size: 3.5em;
 	color: #41c7c7;
 }
 
@@ -29,11 +30,11 @@
 	margin-bottom: 1em;
 }
 .form_text_input input[type="text"]{
-  width: 320px;
+  width: 250px;
   padding: 1em auto 12px;
   background: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 18px;
   font-weight: 400;
   border: none;
   text-align: center;
@@ -76,4 +77,9 @@
 }
 .nation_button_submit:hover{
 	color: #41c7c7;
+}
+
+.graph_loader{
+	color: var(--vibe_pink);
+	text-transform: uppercase;
 }

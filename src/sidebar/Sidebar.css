@@ -1,10 +1,10 @@
 .navbar {
-  background: #222429;
-  height: 8vh;
+  height: fit-content;
+  min-height: 8vh;
   display: flex;
   align-items: center;
-  border: 1px dashed wheat;
-
+  border-bottom: 1px dashed wheat;
+  width: 100%;
 }
 .menu-bars {
   font-size: 1.5em;
@@ -15,8 +15,8 @@
   padding: 0 1em;
 }
 .live{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   border-left: 1px dashed wheat;
   height: inherit;
@@ -34,14 +34,17 @@
   color:pink;
 }
 .datas{
-  width: 33.3%;
-  height: inherit;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 0 1em;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1em;
   border-right: 0.5px solid wheat;
-  font-size: 1.5vw;
+}
+.datas p{
+  font-size: 20px;
+  margin: 0;
 }
 
 .header{
@@ -64,7 +67,7 @@
   z-index: 999;
   background: #222429;
   height: 100vh !important;
-  width: 325px;
+  width: 300px;
   position: fixed;
   top: 0;
   left: -100%;
@@ -145,17 +148,13 @@
   color: wheat;
   font-size: 0.8em;
 }
-@media only screen and (max-width: 720px){
-  .navbar{
-    width: min-content;
-  }
-  .datas{
-    font-size: 2vw;
-    min-width: 25ch;
-  }
-}
 @media only screen and (max-width: 250px){
   .nav-menu{
     display: none;
+  }
+}
+@media only screen and (max-width: 450px){
+  .datas p{
+    font-size: 3vw;
   }
 }

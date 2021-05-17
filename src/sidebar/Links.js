@@ -24,13 +24,7 @@ const Data = [
 		cName: "nav-items",
 		cNameActive: "nav-items-active"
 	},
-			{
-		title: "Disappointers",
-		path: "/disappointer",
-		cName: "nav-items",
-		cNameActive: "nav-items-active"
-	},
-			{
+		{
 		title: "State of COVID: Nationwise",
 		path: "/cases",
 		cName: "nav-items",
