@@ -78,7 +78,6 @@ class Nation extends React.Component {
 				: 
 				<div>
 				<Method data={casessort(filteredGlobalData)} country={country}/>
-				<Methodgraph country={country}/>
 				</div>
 				}
 			</div>

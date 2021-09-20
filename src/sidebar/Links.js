@@ -12,12 +12,12 @@ const Data = [
 		cName: "nav-items",
 		cNameActive: "nav-items-active"
 	},
-		{
-		title: "Leaders",
-		path: "/leaders",
-		cName: "nav-items",
-		cNameActive: "nav-items-active"
-	},
+	// 	{
+	// 	title: "Leaders",
+	// 	path: "/leaders",
+	// 	cName: "nav-items",
+	// 	cNameActive: "nav-items-active"
+	// },
 		{
 		title: "Performers",
 		path: "/performer",
